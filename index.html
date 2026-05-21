@@ -1,0 +1,940 @@
+<!-- =========================================
+TORRENT PHARMA DIGITAL MR CARD
+HOSPITAL THEME WEBSITE
+SAVE FILE NAME : index.html
+
+PHOTO NAME : pp.jpeg
+
+NEW NUMBER : 8980177583
+========================================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rahul Dhapa | Torrent Pharma</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#edf6ff;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+nav{
+width:100%;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:32px;
+font-weight:900;
+color:#0057b8;
+}
+
+.logo span{
+color:#00b894;
+}
+
+nav a{
+text-decoration:none;
+background:#00b894;
+padding:12px 22px;
+border-radius:40px;
+color:white;
+font-weight:700;
+transition:0.4s;
+}
+
+nav a:hover{
+transform:scale(1.08);
+}
+
+/* HERO */
+
+.hero{
+
+min-height:100vh;
+
+background:
+linear-gradient(rgba(0,50,100,0.88),
+rgba(0,50,100,0.88)),
+url('https://images.unsplash.com/photo-1580281657527-47f249e8f4df?q=80&w=1600');
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+padding:60px 8%;
+
+}
+
+.hero-content{
+
+width:100%;
+max-width:1400px;
+margin:auto;
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:60px;
+align-items:center;
+
+}
+
+/* LEFT */
+
+.left{
+text-align:center;
+}
+
+.profile{
+
+width:100%;
+max-width:380px;
+border-radius:30px;
+border:8px solid white;
+box-shadow:0 15px 45px rgba(0,0,0,0.4);
+animation:zoom 1s ease;
+object-fit:cover;
+
+}
+
+@keyframes zoom{
+
+from{
+transform:scale(0.7);
+opacity:0;
+}
+
+to{
+transform:scale(1);
+opacity:1;
+}
+
+}
+
+.profile-box{
+
+margin-top:25px;
+background:white;
+padding:25px;
+border-radius:25px;
+box-shadow:0 10px 35px rgba(0,0,0,0.1);
+
+}
+
+.profile-box h3{
+
+font-size:30px;
+color:#0057b8;
+margin-bottom:15px;
+
+}
+
+.profile-box p{
+
+font-size:18px;
+margin-top:10px;
+color:#444;
+
+}
+
+/* RIGHT */
+
+.right h4{
+
+font-size:24px;
+color:#00e1ff;
+
+}
+
+.right h1{
+
+font-size:62px;
+line-height:1.1;
+font-weight:900;
+color:white;
+margin-top:12px;
+
+}
+
+.right h2{
+
+font-size:30px;
+color:#9effd6;
+margin-top:18px;
+
+}
+
+.right p{
+
+margin-top:28px;
+font-size:18px;
+line-height:2;
+color:#dbeafe;
+
+}
+
+.contact{
+
+margin-top:35px;
+display:flex;
+flex-direction:column;
+gap:18px;
+
+}
+
+.contact div{
+
+display:flex;
+align-items:center;
+gap:16px;
+font-size:19px;
+color:white;
+
+}
+
+.contact i{
+
+width:55px;
+height:55px;
+background:#00b894;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:22px;
+
+}
+
+/* BUTTONS */
+
+.btns{
+
+margin-top:40px;
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+
+}
+
+.btn{
+
+padding:18px 35px;
+border-radius:60px;
+text-decoration:none;
+font-size:19px;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+transition:0.4s;
+
+}
+
+.whatsapp{
+
+background:#25D366;
+color:white;
+box-shadow:0 0 25px rgba(37,211,102,0.5);
+
+}
+
+.call{
+
+background:#0077ff;
+color:white;
+
+}
+
+.btn:hover{
+transform:scale(1.08);
+}
+
+/* SERVICES */
+
+.services{
+
+padding:100px 8%;
+
+}
+
+.title{
+
+text-align:center;
+font-size:46px;
+font-weight:900;
+color:#0057b8;
+margin-bottom:60px;
+
+}
+
+.service-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+
+}
+
+.service-card{
+
+background:white;
+padding:35px;
+border-radius:30px;
+text-align:center;
+box-shadow:0 10px 35px rgba(0,0,0,0.08);
+transition:0.4s;
+position:relative;
+overflow:hidden;
+
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+}
+
+.service-card::before{
+
+content:'';
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:6px;
+background:linear-gradient(90deg,#00b894,#0077ff);
+
+}
+
+.service-card i{
+
+font-size:65px;
+color:#0077ff;
+margin-bottom:20px;
+
+}
+
+.service-card h3{
+
+font-size:27px;
+margin-bottom:15px;
+color:#111;
+
+}
+
+.service-card p{
+
+line-height:1.9;
+color:#555;
+font-size:16px;
+
+}
+
+/* FORM */
+
+.form-section{
+
+padding:100px 8%;
+background:#f4f9ff;
+
+}
+
+.form-box{
+
+background:white;
+padding:50px;
+border-radius:35px;
+box-shadow:0 10px 40px rgba(0,0,0,0.08);
+max-width:1200px;
+margin:auto;
+
+}
+
+.form-box h2{
+
+text-align:center;
+font-size:42px;
+margin-bottom:45px;
+color:#0057b8;
+
+}
+
+.form-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+
+}
+
+.input-box{
+display:flex;
+flex-direction:column;
+}
+
+.input-box label{
+
+font-weight:700;
+margin-bottom:10px;
+color:#111;
+
+}
+
+.input-box input,
+.input-box textarea{
+
+padding:18px;
+border-radius:16px;
+border:2px solid #dbeafe;
+font-size:16px;
+outline:none;
+transition:0.3s;
+
+}
+
+.input-box input:focus,
+.input-box textarea:focus{
+
+border-color:#00b894;
+box-shadow:0 0 15px rgba(0,184,148,0.3);
+
+}
+
+.send-btn{
+
+margin-top:35px;
+width:100%;
+padding:22px;
+border:none;
+border-radius:20px;
+background:linear-gradient(90deg,#00b894,#0077ff);
+color:white;
+font-size:24px;
+font-weight:700;
+cursor:pointer;
+transition:0.4s;
+
+}
+
+.send-btn:hover{
+transform:scale(1.03);
+}
+
+/* FOOTER */
+
+footer{
+
+background:#001b35;
+padding:60px 20px;
+text-align:center;
+color:white;
+
+}
+
+footer h2{
+
+font-size:40px;
+margin-bottom:15px;
+
+}
+
+footer p{
+
+font-size:18px;
+margin-top:10px;
+color:#dbeafe;
+
+}
+
+.social{
+
+margin-top:30px;
+display:flex;
+justify-content:center;
+gap:20px;
+
+}
+
+.social a{
+
+width:60px;
+height:60px;
+background:#00b894;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+font-size:25px;
+text-decoration:none;
+transition:0.4s;
+
+}
+
+.social a:hover{
+transform:scale(1.1);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.right h1{
+font-size:38px;
+}
+
+.right h2{
+font-size:22px;
+}
+
+.title{
+font-size:34px;
+}
+
+.form-box{
+padding:25px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="logo">
+TORRENT <span>PHARMA</span>
+</div>
+
+<a href="https://wa.me/918980177583">
+<i class="fa-brands fa-whatsapp"></i>
+ WhatsApp
+</a>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<!-- LEFT -->
+
+<div class="left">
+
+<img src="pp.jpeg" class="profile">
+
+<div class="profile-box">
+
+<h3>👨 PROFILE DETAILS</h3>
+
+<p>👤 Name : DHAPA RAHULBHAI BHUPATBHAI</p>
+
+<p>🎂 Age : 25 Years</p>
+
+<p>⚧ Gender : MALE</p>
+
+<p>💼 Position : Medical Representative</p>
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="right">
+
+<h4>Medical Representative</h4>
+
+<h1>DHAPA RAHULBHAI BHUPATBHAI</h1>
+
+<h2>Torrent Pharmaceuticals Ltd.</h2>
+
+<p>
+
+Professional Medical Representative helping
+Doctors, Clinics, Hospitals, Chemists and Stockists
+with latest medicine information, product promotion,
+prescription support and healthcare solutions.
+
+</p>
+
+<div class="contact">
+
+<div>
+<i class="fa-solid fa-phone"></i>
+<span>+91 8980177583</span>
+</div>
+
+<div>
+<i class="fa-brands fa-whatsapp"></i>
+<span>WhatsApp Available</span>
+</div>
+
+<div>
+<i class="fa-solid fa-envelope"></i>
+<span>rahulbdhapa@torrentian.com</span>
+</div>
+
+<div>
+<i class="fa-solid fa-hospital"></i>
+<span>Torrent Pharmaceuticals</span>
+</div>
+
+</div>
+
+<div class="btns">
+
+<a href="https://wa.me/918980177583"
+class="btn whatsapp">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+Chat on WhatsApp
+
+</a>
+
+<a href="tel:+918980177583"
+class="btn call">
+
+<i class="fa-solid fa-phone"></i>
+
+Call Now
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section class="services">
+
+<h2 class="title">
+💊 Medical Services
+</h2>
+
+<div class="service-grid">
+
+<div class="service-card">
+
+<i class="fa-solid fa-capsules"></i>
+
+<h3>New Medicines</h3>
+
+<p>
+Doctors ને નવી medicines વિશે સંપૂર્ણ માહિતી આપવી.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-heart-pulse"></i>
+
+<h3>Medicine Benefits</h3>
+
+<p>
+Medicine ના benefits અને usage સમજાવવું.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-hospital"></i>
+
+<h3>Clinic Visit</h3>
+
+<p>
+Clinic / Hospital visit support અને online guidance.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-store"></i>
+
+<h3>Chemist Support</h3>
+
+<p>
+Chemist અને stockist સાથે regular સંપર્ક રાખવો.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-bullhorn"></i>
+
+<h3>Promotion</h3>
+
+<p>
+Company ના products નું professional promotion.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<h3>Daily Reporting</h3>
+
+<p>
+Daily reporting અને sales target management.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FORM -->
+
+<section class="form-section">
+
+<div class="form-box">
+
+<h2>
+📩 Doctor Inquiry Form
+</h2>
+
+<form id="whatsappForm">
+
+<div class="form-grid">
+
+<div class="input-box">
+
+<label>Doctor Name</label>
+
+<input type="text" id="doctorname" required>
+
+</div>
+
+<div class="input-box">
+
+<label>Hospital / Clinic</label>
+
+<input type="text" id="hospital">
+
+</div>
+
+<div class="input-box">
+
+<label>Phone Number</label>
+
+<input type="tel" id="phone">
+
+</div>
+
+<div class="input-box">
+
+<label>Email ID</label>
+
+<input type="email" id="email">
+
+</div>
+
+<div class="input-box">
+
+<label>Required Product</label>
+
+<input type="text" id="product">
+
+</div>
+
+<div class="input-box">
+
+<label>City</label>
+
+<input type="text" id="city">
+
+</div>
+
+<div class="input-box" style="grid-column:1/-1;">
+
+<label>Message</label>
+
+<textarea rows="5" id="message"></textarea>
+
+</div>
+
+</div>
+
+<button type="submit" class="send-btn">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+SEND ON WHATSAPP
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h2>
+🏥 Torrent Pharma Digital Card
+</h2>
+
+<p>
+DHAPA RAHULBHAI BHUPATBHAI
+</p>
+
+<p>
+📞 +91 8980177583
+</p>
+
+<p>
+📧 rahulbdhapa@torrentian.com
+</p>
+
+<div class="social">
+
+<a href="https://wa.me/918980177583">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<a href="tel:+918980177583">
+
+<i class="fa-solid fa-phone"></i>
+
+</a>
+
+<a href="mailto:rahulbdhapa@torrentian.com">
+
+<i class="fa-solid fa-envelope"></i>
+
+</a>
+
+</div>
+
+</footer>
+
+<!-- WHATSAPP FORM SCRIPT -->
+
+<script>
+
+document.getElementById("whatsappForm")
+.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+let doctorname =
+document.getElementById("doctorname").value;
+
+let hospital =
+document.getElementById("hospital").value;
+
+let phone =
+document.getElementById("phone").value;
+
+let email =
+document.getElementById("email").value;
+
+let product =
+document.getElementById("product").value;
+
+let city =
+document.getElementById("city").value;
+
+let message =
+document.getElementById("message").value;
+
+let text =
+
+"🏥 *NEW DOCTOR INQUIRY* %0A%0A"
+
++
+
+"👨‍⚕ Doctor Name : " + doctorname + "%0A"
+
++
+
+"🏥 Hospital : " + hospital + "%0A"
+
++
+
+"📞 Phone : " + phone + "%0A"
+
++
+
+"📧 Email : " + email + "%0A"
+
++
+
+"💊 Product : " + product + "%0A"
+
++
+
+"📍 City : " + city + "%0A"
+
++
+
+"📝 Message : " + message;
+
+window.open(
+
+"https://wa.me/918980177583?text=" + text,
+
+"_blank"
+
+);
+
+});
+
+</script>
+
+</body>
+</html>
